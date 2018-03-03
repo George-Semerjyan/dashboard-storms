@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Front Page</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="hw-css.css">
+  </head>
+
+  <body>
+
+    <nav class = "navbar navbar-default">
+      <div class = "container-fluid">
+        <div class = "navbar-header">
+
+          <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class = "sr-only"> Toggle navigation </span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          </button>
+
+        <a class = "navbar-brand" href = "hw-html.html">Home</a>
+        </div>
+
+        <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+          <ul class = "nav navbar-nav navbar-right">
+            <li class = "dropdown">
+              <a href = "#" class = "dropdown-toggle" data-toggle="dropdown" role = "button" aria-haspopup = "true" aria-expanded="false"> Plots <span class = "caret"></span></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "hw-tempviz.html"> Temperature </a></li>
+                <li><a href = "hw-windviz.html"> Wind Speed </a></li>
+                <li><a href = "hw-cloudviz.html"> Cloudiness </a></li>
+                <li><a href = "hw-humidityviz.html"> Humidity </a></li>
+              </ul>
+            </li>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                    crossorigin="anonymous">
+                    </script>
+
+            <li><a href = "hw-comparisons.html">Comparison</a></li>
+            <li><a href = "hw-data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class = "container">
+        <div class = "col-md-12">
+          <div class = "sigline">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class = "container">
+      <div class = "row row-grid">
+
+        <div class = "col-md-8">
+          <div class = "box box-left">
+            <section id = "intro">
+              <h1>Humidity</h1>
+              <hr>
+              <p>A humidity percent of 60 to 100 is commonly found in cities from latitudes of 0 to 60 with few classes of humidity falling below.</p>
+              <figure><a target = "_blank" href = "Latitude_vs_Humidity_Plot.png">
+                      <img id = "visualize_left" src = "Latitude_vs_Humidity_Plot.png" alt = "art"></a>
+              </figure>
+            </section>
+          </div>
+        </div>
+
+        <div class = "col-md-4">
+          <div class = "box box-right">
+            <h2>Visualizations</h2>
+            <hr>
+            <div class = "row">
+              <div class = "col-xs-6 col-sm-3 col-md-6">
+                <figure><a href = "hw-tempviz.html">
+                  <img id = "visualize_right" src = "Latitude_vs_Temperature_Plot.png" alt = "Latitude vs Temerature"></a>
+                </figure>
+              </div>
+
+              <div class = "col-xs-6 col-sm-3 col-md-6">
+                <figure><a href = "hw-cloudviz.html">
+                  <img id = "visualize_right" src = "Latitude_vs_Cloudiness_Plot.png" alt = "Latitude vs Cloudiness"></a>
+                </figure>
+              </div>
+
+              <div class = "col-xs-6 col-sm-3 col-md-6">
+                <figure><a href = "hw-humidityviz.html">
+                  <img id = "visualize_right" src = "Latitude_vs_Humidity_Plot.png" alt = "Latitude vs Humidity"</a>
+                </figure>
+              </div>
+
+              <div class = "col-xs-6 col-sm-3 col-md-6">
+                <figure><a href = "hw-windviz.html">
+                  <img id = "visualize_right" src = "Latitude_vs_WindSpeed_Plot.png" alt = "Latitude vs Wind Speed"</a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
